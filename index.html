@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="todoapp"> 
+    <header class="header">
+        <h1 id="header">Watch and Code Todos Project</h1>
+        <button onclick="handlers.toggleAll()" type="submit" class="toggle-all"></button>
+        <input onkeypress="handlers.addTodos()" type="text" name="addToDo" id="addToDoTextInput" value="" class="add-todos" placeholder="What needs to be done?" />
+    </header>
+    <section class="main" style="display: block">
+      <ul id="list" class="todo-list">
+              <!-- here are the ToDo Items listed dynamic -->
+      </ul>
+
+    </section> 
+
+    <footer class="footer">
+        <span class="todo-count">
+          <strong></strong> Items Left
+        </span>
+        <ul class="filters">
+          <li>
+            <a class="all" href="#">All</a>
+            <a class="active" href="#">Active</a>
+            <a class="completedTodos" href="#">Completed</a>
+          </li>
+        </ul>
+    </footer> 
+</section>
+
+<script src="script.js"></script>
+</body>
+
+</html>
